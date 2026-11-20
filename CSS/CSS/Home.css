@@ -1,0 +1,102 @@
+*{
+    margin:0;
+    padding:0;
+    box-sizing:border-box;
+}
+
+html{
+    scroll-behavior:smooth;
+}
+
+body{
+
+    font-family:'Poppins',sans-serif;
+    background-image:url(../imagem/fundo.png);
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-attachment: fixed;
+    color:#fa18d4;
+    overflow-x:hidden;
+
+}
+
+.inicio{
+
+    height:100vh;
+
+    display:flex;
+    justify-content:center;
+    align-items:center;
+    text-align:center;
+    position:relative;
+}
+
+.overlay{
+
+    position:absolute;
+
+    width:100%;
+    height:100%;
+    
+}
+
+.emoji{
+
+    font-size:60px;
+
+    margin-bottom:20px;
+
+    animation:pulse 2s infinite;
+
+    color:#000000;
+
+}
+
+
+.inicio p{
+
+    font-size:20px;
+
+    line-height:1.8;
+
+    max-width:700px;
+
+    margin:auto;
+
+    margin-bottom:45px;
+
+}
+
+#abrir{
+
+    background:#ad0606;
+
+    color:#000000;
+
+    border:none;
+
+    padding:18px 45px;
+
+    border-radius:50px;
+
+    font-size:20px;
+
+    font-weight:600;
+
+    cursor:pointer;
+
+    transition:.4s;
+
+    box-shadow:0 10px 30px rgba(163, 18, 199, 0.788);
+}
+
+#abrir:hover{
+
+    transform:translateY(-5px);
+
+    background:#a70303;
+
+    box-shadow:0 18px 35px rgba(0, 0, 0, 0.45);
+
+}
+

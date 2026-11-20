@@ -1,0 +1,74 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Tempo Juntos - Neon</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Outfit:wght@300;500;700&family=Poppins:wght@400;600&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="../css/juntos.css">
+</head>
+<body>
+
+    <div class="particles" id="particles"></div>
+    <div class="bottom-nebula"></div>
+
+    <div class="container">
+        <div class="neon-heart-bg">
+            <svg viewBox="0 0 500 500" fill="none" xmlns="http://www.w3.org/2000/svg">
+                <path d="M250 435C250 435 55 310 55 175C55 110 105 65 165 65C205 65 235 88 250 115C265 88 295 65 335 65C395 65 445 110 445 175C445 310 250 435 250 435Z" 
+                      stroke="#9d4edd" stroke-width="10" stroke-opacity="0.25" filter="blur(8px)"/>
+                <path d="M250 435C250 435 55 310 55 175C55 110 105 65 165 65C205 65 235 88 250 115C265 88 295 65 335 65C395 65 445 110 445 175C445 310 250 435 250 435Z" 
+                      stroke="#e0aaff" stroke-width="3.5" stroke-linecap="round"/>
+                <ellipse cx="250" cy="260" rx="235" ry="75" transform="rotate(-12 250 260)" 
+                         stroke="#c77dff" stroke-width="1.5" stroke-opacity="0.45"/>
+            </svg>
+        </div>
+
+        <h1>Tempo juntos</h1>
+
+        <div class="timer-grid">
+            <div class="time-unit">
+                <div class="number-box" id="years">0</div>
+                <span class="unit-label" id="years-label">Ano</span>
+            </div>
+
+            <div class="time-unit">
+                <div class="number-box" id="months">0</div>
+                <span class="unit-label" id="months-label">Mês</span>
+            </div>
+
+            <div class="time-unit">
+                <div class="number-box" id="days">0</div>
+                <span class="unit-label" id="days-label">Dias</span>
+            </div>
+
+            <div class="time-unit">
+                <div class="number-box" id="hours">0</div>
+                <span class="unit-label" id="hours-label">Horas</span>
+            </div>
+
+            <div class="time-unit">
+                <div class="number-box" id="minutes">00</div>
+                <span class="unit-label">Min</span>
+            </div>
+
+            <div class="time-unit">
+                <div class="number-box" id="seconds">00</div>
+                <span class="unit-label">seg</span>
+            </div>
+        </div>
+
+        <div class="date-controls">
+            <button class="date-btn" id="togglePickerBtn">Alterar data de início</button>
+            <div class="date-picker-wrapper" id="datePickerWrapper">
+                <input type="datetime-local" id="startDateInput">
+                <button class="date-btn" id="saveDateBtn">Salvar</button>
+            </div>
+        </div>
+    </div>
+
+    <script src="../js/juntos.js"></script>
+</body>
+</html>
